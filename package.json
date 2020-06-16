@@ -1,0 +1,42 @@
+{
+    "name": "tooltip-react",
+    "version": "1.0.0",
+    "description": "tooltip library for react",
+    "main": "lib/index.js",
+    "scripts": {
+        "start": "docz dev",
+        "build": "babel src --out-dir lib",
+        "lint": "eslint ."
+    },
+    "peerDependencies": {
+        "react": ">=16.2.0",
+        "react-dom": ">=16.2.0"
+    },
+    "author": "Philipp Avans",
+    "license": "ISC",
+    "devDependencies": {
+        "@babel/cli": "^7.10.1",
+        "@babel/core": "^7.10.2",
+        "@babel/plugin-transform-arrow-functions": "^7.10.1",
+        "@babel/preset-env": "^7.10.2",
+        "@babel/preset-react": "^7.10.1",
+        "babel-core": "^6.26.3",
+        "babel-eslint": "^10.1.0",
+        "babel-jest": "^26.0.1",
+        "docz": "^2.3.1",
+        "eslint": "^7.2.0",
+        "eslint-config-airbnb": "^18.1.0",
+        "eslint-config-prettier": "^6.11.0",
+        "eslint-plugin-import": "^2.21.2",
+        "eslint-plugin-jest": "^23.13.2",
+        "eslint-plugin-jsx-a11y": "^6.2.3",
+        "eslint-plugin-prettier": "^3.1.4",
+        "eslint-plugin-react": "^7.20.0",
+        "prettier": "2.0.5",
+        "react": "^16.13.1",
+        "react-dom": "^16.13.1"
+    },
+    "dependencies": {
+        "prop-types": "^15.7.2"
+    }
+}
