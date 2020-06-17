@@ -2,6 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import PropTypes from 'prop-types';
 
+//utils
+import { generateUUID } from "./utilities/uuid";
+import { calculatePosition } from "./utilities/calculatePosition"
+
 class Tooltip extends React.Component {
 
     constructor(props) {
@@ -23,12 +27,10 @@ class Tooltip extends React.Component {
         }
     }
 
-    setCoordinates = event => {
+    setCoordinates = (event) => {
+        calculatePosition(event, '15px')
         this.setState({
-            coordinates: {
-                top: `${event.clientY + 10}px`,
-                left: `${event.clientX + 10}px`
-            }
+            coordinates: calculatePosition(event, '15px')
         })
     }
 
@@ -55,6 +57,7 @@ class Tooltip extends React.Component {
             color: '#c1c1c1',
             padding: '5px',
             borderRadius: '4px',
+            height: '15px'
         }
 
         if (!!showTooltip) {
@@ -74,11 +77,11 @@ class Tooltip extends React.Component {
         const { children } = this.props;
         const elem = (
             <span
-                onMouseEnter={() => this.showTooltip()}
-                onMouseLeave={() => this.hideTooltip()}
-                onMouseMove={(e) => this.setCoordinates(e)}
-                onFocus={() => this.showTooltip()}
-                onBlur={() => this.hideTooltip()}
+                onMouseEnter={this.showTooltip}
+                onMouseLeave={this.hideTooltip}
+                onMouseMove={e => this.setCoordinates(e)}
+                onFocus={this.showTooltip}
+                onBlur={this.hideTooltip}
                 key='tooltip'
             >
                 {children}
