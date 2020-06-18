@@ -16,7 +16,20 @@
         ]
     ],
     "plugins": [
-        "@babel/plugin-proposal-class-properties",
-        "@babel/plugin-transform-arrow-functions"
+        [
+            "@babel/plugin-proposal-decorators",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-proposal-class-properties",
+            {
+                "legacy": true
+            }
+        ],
+        [
+            "@babel/plugin-transform-arrow-functions"
+        ]
     ]
 }
