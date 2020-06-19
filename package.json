@@ -1,5 +1,5 @@
 {
-    "name": "tooltip-react",
+    "name": "just-tooltip-react",
     "version": "1.0.0",
     "description": "tooltip library for react",
     "main": "lib/index.js",
@@ -7,6 +7,13 @@
         "start": "docz dev",
         "build": "babel src --out-dir lib",
         "lint": "eslint ."
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Boilingwaterr/just-react-tooltip.git"
+    },
+    "bugs": {
+        "url": "https://github.com/Boilingwaterr/just-react-tooltip/issues"
     },
     "peerDependencies": {
         "react": ">=16.2.0",

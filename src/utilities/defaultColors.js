@@ -1,6 +1,6 @@
 const defaultColors = {
     "dark": { "color": "#c1c1c1", "backgroundColor": "#424242" },
-    "light": { "color": "#424242", "backgroundColor": "#fff" },
+    "light": { "color": "#424242", "backgroundColor": "#F4F4F4" },
     "success": { "color": "#fff", "backgroundColor": "#8DC572" },
     "darkGreen": { "color": "#c1c1c1", "backgroundColor": "#2D572C" },
     "warning": { "color": "#000", "backgroundColor": "#E4766C" },

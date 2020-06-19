@@ -9,7 +9,8 @@ const styler = (tooltipsType, styles, customStyles = {}) => {
                 borderRadius: '4px',
                 minHeight: '15px',
                 position: 'absolute',
-                textAlign: 'center'
+                textAlign: 'center',
+                left: '-50%'
             }
         case "custom":
             return {

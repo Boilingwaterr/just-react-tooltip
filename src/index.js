@@ -22,7 +22,8 @@ class Tooltip extends React.Component {
             customPosition: PropTypes.object,
             fontSize: PropTypes.string,
             render: PropTypes.string,
-            component: PropTypes.any
+            component: PropTypes.object,
+            opacity: PropTypes.number,
         };
     }
 
@@ -37,6 +38,7 @@ class Tooltip extends React.Component {
             fontSize: this.props.fontSize || "16px",
             customPosition: this.props.customPosition || null,
             component: this.props.component || null,
+            opacity: this.props.opacity || 0.8,
             render: this.props.render,
             showTooltip: false,
             coordinates: null,
@@ -78,7 +80,7 @@ class Tooltip extends React.Component {
         const {
             showTooltip, position, defaultStyle,
             type, coordinates, customPosition, fontSize,
-            component, render
+            component, render, opacity
         } = this.state;
 
         let styles;
@@ -86,9 +88,9 @@ class Tooltip extends React.Component {
         //styling for tooltip
         const defaultColors = getDefaultColors(defaultStyle);
         if (render && typeof render === "string") {
-            styles = styler(type, { ...defaultColors, fontSize });
+            styles = styler(type, { ...defaultColors, opacity, fontSize });
         } else if (component && typeof component === "object") {
-            styles = styler(type, { backgroundColor: 'none', fontSize });
+            styles = styler(type, { backgroundColor: 'none', opacity, fontSize });
         } else {
             throw new Error('Check type of component. field "render" should be a string, field "component" should be an object.')
         }

@@ -5,10 +5,39 @@ name: Tooltip
 import { Playground } from 'docz';
 import Tooltip from './../src';
 
+## How to install
+<div style = {{
+    backgroundColor: '#F4F4F4', 
+    fontSize: '18px',
+    fontWeight: 600,
+    padding: '15px',
+    color: '#000'
+}}> 
+    npm install just-react-tooltip
+</div>
+
+## interface
+<h5>Tooltip render = 'text' type = 'inline' defaultStyle = 'dark'</h5>
+<h4>type: | 'inline' | 'custom' | (defaul = 'inline)</h4>
+<h4>render: | string |</h4>
+<h4>component: | object |</h4>
+<h4>position: | follower | bindToBlock | fixed |</h4>
+<h4>customPosition: | object |</h4>
+<h4>opacity: | 0 - 1 |</h4>
+<div>
+    <h4>defaultStyle: </h4>
+    <div style = {{ "color": "#c1c1c1", "backgroundColor": "#424242", width: '100px', margin: '10px', padding: '10px'}}>dark</div>
+    <div style = {{ "color": "#424242", "backgroundColor": "#F4F4F4", width: '100px', margin: '10px', padding: '10px'}}>light</div>
+    <div style = {{ "color": "#fff", "backgroundColor": "#8DC572", width: '100px', margin: '10px', padding: '10px'}}>success</div>
+    <div style = {{ "color": "#c1c1c1", "backgroundColor": "#2D572C", width: '100px', margin: '10px', padding: '10px'}}>darkGreen</div>
+    <div style = {{ "color": "#000", "backgroundColor": "#E4766C", width: '100px', margin: '10px', padding: '10px'}}>warning</div>
+    <div style = {{ "color": "#fff", "backgroundColor": "#BE6464", width: '100px', margin: '10px', padding: '10px'}}>error</div>
+    <div style = {{ "color": "#c1c1c1", "backgroundColor": "#337AB7", width: '100px', margin: '10px', padding: '10px'}}>info</div>
+    <div style = {{ "color": "#713360", "backgroundColor": "#B2A5F3", width: '100px', margin: '10px', padding: '10px'}}>lightBlue</div>
+    <div style = {{ "color": "#713360", "backgroundColor": "#F594B9", width: '100px', margin: '10px', padding: '10px'}}>pinkMilk</div>
+</div>
 
 ## Basic usage
-How to install
-npm install just-react-tooltip
 <Playground>
     <div style={{
             display: "flex",
@@ -56,11 +85,11 @@ npm install just-react-tooltip
             padding: "15px",
         }}>
             <Tooltip
-                    defaultStyle="info"
                     type = "inline"
+                    defaultStyle="error"
                     position = "fixed"
-                    customPosition = {{left: "80%", top: "80%"}}
                     render="This is custom position tooltip."
+                    customPosition = {{top: "1300px", left: "700px"}}
                 >   
                     <div style = { {
                         display: "flex",
