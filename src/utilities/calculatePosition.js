@@ -20,7 +20,6 @@ export const positioning = (type = 'inline', position = 'bindToBlock', coordinat
     if (ref)
         switch (position) {
             case 'follower':
-
                 spanStyle = createSpanStyle(null, 'none');
 
                 return {
@@ -44,7 +43,6 @@ export const positioning = (type = 'inline', position = 'bindToBlock', coordinat
                 }
 
             case 'fixed':
-
                 spanStyle = createSpanStyle(null, 'none');
                 coordinates = { ...customize.customPosition }
                 return {
