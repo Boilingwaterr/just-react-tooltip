@@ -8,7 +8,7 @@ const constants = {
         darkRed: '#73443F',
         blue: '#122FAA',
         lightBlue: '#B2A5F3',
-        darkBlue: '#413D51',
+        darkBlue: '#337AB7',
         dark: '#424242',
         pinkMilk: '#F594B9'
     }

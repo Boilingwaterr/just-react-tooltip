@@ -5,11 +5,103 @@ name: Tooltip
 import { Playground } from 'docz';
 import Tooltip from './../src';
 
+
 ## Basic usage
+How to install
+npm install just-react-tooltip
 <Playground>
-    <Tooltip 
-        render="This is descriprion."
-    >
-        What is it?
-    </Tooltip>
+    <div style={{
+            display: "flex",
+            flexDirection: "column",
+    }}>
+        <div style={{
+            display: "flex",
+            justifyContent: "space-around",
+            padding: "15px",
+        }}>
+            <Tooltip render="I am default! (:">   
+                <div style = { {
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "pink",
+                    padding: "15px",
+                    width: "150px",
+                    color: '#132435'
+                } }>
+                    default position
+                </div>
+            </Tooltip>
+            <Tooltip 
+                defaultStyle="success"
+                type="inline"
+                position="bindToBlock"
+                render="i'am bound :c"
+            >
+                <div style = { {
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "#2D572C",
+                    padding: "15px",
+                    width: "150px"
+                } }>
+                    bindToBlock
+                </div>
+            </Tooltip>
+        </div>
+        <div style={{
+            display: "flex",
+            justifyContent: "space-around",
+            padding: "15px",
+        }}>
+            <Tooltip
+                    defaultStyle="info"
+                    type = "inline"
+                    position = "fixed"
+                    customPosition = {{left: "80%", top: "80%"}}
+                    render="This is custom position tooltip."
+                >   
+                    <div style = { {
+                        display: "flex",
+                        justifyContent: "center",
+                        alignItems: "center",
+                        backgroundColor: "#337AB7",
+                        padding: "15px",
+                        width: "150px"
+                    } }>
+                    custom position 
+                    </div>
+            </Tooltip>
+            <Tooltip
+                defaultStyle="dark"
+                type = "custom"
+                position = "bindToBlock"
+                component={<div
+                style={{
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    padding: '15px',
+                    backgroundColor: 'green',
+                    color: 'white'
+                }}
+                >
+                <div style = {{backgroundColor: "pink", margin: "5px", padding: "10px"}}>custom</div>
+                <div style = {{backgroundColor: "orange", margin: "5px", padding: "10px"}}>tooltip</div>
+                </div>}
+            >   
+                <div style = { {
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    backgroundColor: "#BE6464",
+                    padding: "15px",
+                    width: "150px"
+                } }>
+                    component
+                </div>
+            </Tooltip>
+        </div>
+    
+    </div>
 </Playground>
