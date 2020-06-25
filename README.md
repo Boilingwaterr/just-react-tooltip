@@ -1,4 +1,4 @@
-<a href="">
+<a href="https://boilingwaterr.github.io/just-react-tooltip-docs/">
 documentation
 </a>
 
