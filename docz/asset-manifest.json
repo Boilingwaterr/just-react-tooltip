@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/just-react-tooltip/static/css/main.cf03b210.chunk.css",
+    "main.js": "/just-react-tooltip/static/js/main.9758df0c.chunk.js",
+    "main.js.map": "/just-react-tooltip/static/js/main.9758df0c.chunk.js.map",
+    "runtime-main.js": "/just-react-tooltip/static/js/runtime-main.bca6937e.js",
+    "runtime-main.js.map": "/just-react-tooltip/static/js/runtime-main.bca6937e.js.map",
+    "static/js/2.994ec59d.chunk.js": "/just-react-tooltip/static/js/2.994ec59d.chunk.js",
+    "static/js/2.994ec59d.chunk.js.map": "/just-react-tooltip/static/js/2.994ec59d.chunk.js.map",
+    "index.html": "/just-react-tooltip/index.html",
+    "precache-manifest.23f328635d41f213658abccd4c12d217.js": "/just-react-tooltip/precache-manifest.23f328635d41f213658abccd4c12d217.js",
+    "service-worker.js": "/just-react-tooltip/service-worker.js",
+    "static/css/main.cf03b210.chunk.css.map": "/just-react-tooltip/static/css/main.cf03b210.chunk.css.map",
+    "static/js/2.994ec59d.chunk.js.LICENSE.txt": "/just-react-tooltip/static/js/2.994ec59d.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bca6937e.js",
+    "static/js/2.994ec59d.chunk.js",
+    "static/css/main.cf03b210.chunk.css",
+    "static/js/main.9758df0c.chunk.js"
+  ]
+}
